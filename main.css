@@ -3,15 +3,41 @@ html, body{
     padding: 0;
     width: 100%;
     height: 100%;
-    background: rgb(172, 120, 185) ;
-    background: linear-gradient(180deg, #134074 25%, #0B2545 75%);
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
 
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url("img/background.jpg");
+    /* background-color: black; */
+    /* background-blend-mode: darken; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
 
-.header1{
-    background-color: rgba(211, 214, 210, 0.849);
+ }
+ .layer {
+    background-color: rgba(131, 131, 131, 0.466);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ } 
+
+ 
+ 
+
+
+.navBar{
+    background-color: rgba(192, 225, 252, 0.849);
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -19,6 +45,7 @@ html, body{
     font-weight: bold;
     border-radius: 0 0 15px 15px;
     box-shadow: 4px 7px 8px #8DA9C4;
+    z-index: 1000;
 }
 .logo{
     height: 40px;
@@ -33,8 +60,8 @@ html, body{
     border-right: 5px double #134074;
 }
 .headLogo{
-margin: 0 auto;
-margin-right: 20px;
+    margin: 0 auto;
+    margin-right: 20px;
 }
 .head1{
     display: flex;
@@ -104,11 +131,16 @@ margin-right: 20px;
     display: flex;
     justify-content: space-evenly;
     color: rgb(193, 223, 255);
-    border-bottom: 5px double rgba(143, 205, 255, 0.404);
+    border-bottom: 10px double rgba(0, 58, 105, 0.712);
+    border-radius: 0 0 15px 15px;
 }
 .introT1{
     text-align: center;
     margin: 0 50px;
+    background-color: #004979ab;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 3px 4px #004872;
+
 }
 .introText{
     font-size: 48px;
@@ -118,13 +150,14 @@ margin-right: 20px;
     text-align: center;
     font-weight: bold;
     border-radius: 0 0 15px 15px;
-    margin-bottom: 5px;
-    border-bottom: 7px solid rgba(143, 205, 255, 0.404);
+    /* margin-bottom: 5px; */
+    border-bottom: 7px solid rgba(0, 46, 83, 0.719);
+    border-radius: 0 0 30px 30px;
     text-shadow: 2px 3px 4px #6c9ebb;
 }
 
 .introText1{
-    font-size: 28px;
+    font-size: 24px;
     display: flex;
     margin-top: 25px;
     text-shadow: 2px 2px 4px #6c9ebb;
@@ -147,11 +180,11 @@ margin-right: 20px;
 } */
 #carouselExampleFade{
     display: flex;
-    width: 560px;
+    width: 650px;
     justify-content: center;
     margin: 35px auto;
-    border: 2px double #EEF4ED;
-    box-shadow: 4px 2px 4px #8DA9C4;
+    border: 3px solid rgb(0, 57, 95);
+    box-shadow: 2px 3px 4px rgb(0, 38, 73);
 }
 .carouselinner{
     display: flex;
